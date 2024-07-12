@@ -7,8 +7,8 @@
 
 import UIKit
 
-class DispatchType: UIView {
-    @IBOutlet weak var price: UILabel!
-    
-    @IBOutlet weak var title: UILabel!
-}
+//class DispatchType: UIView {
+//    @IBOutlet weak var price: UILabel!
+//    
+//    @IBOutlet weak var title: UILabel!
+//}

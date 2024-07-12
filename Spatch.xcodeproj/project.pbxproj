@@ -38,6 +38,15 @@
 		C4EF9F7E2C32C3E0005AB0CA /* PickupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F7D2C32C3E0005AB0CA /* PickupScreenViewController.swift */; };
 		C4EF9F802C32D409005AB0CA /* LocationTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F7F2C32D409005AB0CA /* LocationTextInputView.swift */; };
 		C4EF9F822C330AD3005AB0CA /* TextViewWithBottomBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F812C330AD3005AB0CA /* TextViewWithBottomBorder.swift */; };
+		FAE2008D2C419CBC00E347E0 /* BottomPopupDismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2008C2C419CBC00E347E0 /* BottomPopupDismissAnimator.swift */; };
+		FAE2008F2C419CDB00E347E0 /* BottomPopupDismissInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2008E2C419CDB00E347E0 /* BottomPopupDismissInteractionController.swift */; };
+		FAE200912C419CF600E347E0 /* BottomPopupNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE200902C419CF600E347E0 /* BottomPopupNavigationController.swift */; };
+		FAE200932C419D1900E347E0 /* BottomPopupPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE200922C419D1900E347E0 /* BottomPopupPresentAnimator.swift */; };
+		FAE200952C419D3500E347E0 /* BottomPopupPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE200942C419D3500E347E0 /* BottomPopupPresentationController.swift */; };
+		FAE200972C419D6300E347E0 /* BottomPopupTransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE200962C419D6300E347E0 /* BottomPopupTransitionHandler.swift */; };
+		FAE200992C419D8300E347E0 /* BottomPopupUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE200982C419D8300E347E0 /* BottomPopupUtils.swift */; };
+		FAE2009B2C419D9F00E347E0 /* BottomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2009A2C419D9F00E347E0 /* BottomPopupViewController.swift */; };
+		FAE2009D2C419F2900E347E0 /* RequestSnackBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2009C2C419F2900E347E0 /* RequestSnackBarVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +83,15 @@
 		C4EF9F7D2C32C3E0005AB0CA /* PickupScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupScreenViewController.swift; sourceTree = "<group>"; };
 		C4EF9F7F2C32D409005AB0CA /* LocationTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTextInputView.swift; sourceTree = "<group>"; };
 		C4EF9F812C330AD3005AB0CA /* TextViewWithBottomBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewWithBottomBorder.swift; sourceTree = "<group>"; };
+		FAE2008C2C419CBC00E347E0 /* BottomPopupDismissAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissAnimator.swift; sourceTree = "<group>"; };
+		FAE2008E2C419CDB00E347E0 /* BottomPopupDismissInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupDismissInteractionController.swift; sourceTree = "<group>"; };
+		FAE200902C419CF600E347E0 /* BottomPopupNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupNavigationController.swift; sourceTree = "<group>"; };
+		FAE200922C419D1900E347E0 /* BottomPopupPresentAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentAnimator.swift; sourceTree = "<group>"; };
+		FAE200942C419D3500E347E0 /* BottomPopupPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupPresentationController.swift; sourceTree = "<group>"; };
+		FAE200962C419D6300E347E0 /* BottomPopupTransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupTransitionHandler.swift; sourceTree = "<group>"; };
+		FAE200982C419D8300E347E0 /* BottomPopupUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupUtils.swift; sourceTree = "<group>"; };
+		FAE2009A2C419D9F00E347E0 /* BottomPopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomPopupViewController.swift; sourceTree = "<group>"; };
+		FAE2009C2C419F2900E347E0 /* RequestSnackBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestSnackBarVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +143,7 @@
 		C4C3BD732C1A133400E16382 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				FAE2008B2C419C8C00E347E0 /* BottomPopUpController */,
 				C4EF9F752C2DEF0C005AB0CA /* Radio Button */,
 				C4EF9F4E2C1A1997005AB0CA /* GetStartedButton.swift */,
 				C4EF9F542C1CF5D1005AB0CA /* AuthTabButton.swift */,
@@ -168,6 +187,7 @@
 				C4EF9F712C2B4D19005AB0CA /* WhoIsSendingViewController.swift */,
 				C4EF9F7D2C32C3E0005AB0CA /* PickupScreenViewController.swift */,
 				C4C3FFFA2C3CB12800DE80F2 /* PreviewOrderViewController.swift */,
+				FAE2009C2C419F2900E347E0 /* RequestSnackBarVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,6 +208,21 @@
 				C4C3FFFC2C3CD0AB00DE80F2 /* DispatchType.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FAE2008B2C419C8C00E347E0 /* BottomPopUpController */ = {
+			isa = PBXGroup;
+			children = (
+				FAE2008C2C419CBC00E347E0 /* BottomPopupDismissAnimator.swift */,
+				FAE2008E2C419CDB00E347E0 /* BottomPopupDismissInteractionController.swift */,
+				FAE200902C419CF600E347E0 /* BottomPopupNavigationController.swift */,
+				FAE200922C419D1900E347E0 /* BottomPopupPresentAnimator.swift */,
+				FAE200942C419D3500E347E0 /* BottomPopupPresentationController.swift */,
+				FAE200962C419D6300E347E0 /* BottomPopupTransitionHandler.swift */,
+				FAE200982C419D8300E347E0 /* BottomPopupUtils.swift */,
+				FAE2009A2C419D9F00E347E0 /* BottomPopupViewController.swift */,
+			);
+			path = BottomPopUpController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,21 +303,30 @@
 				C4EF9F552C1CF5D1005AB0CA /* AuthTabButton.swift in Sources */,
 				C4EF9F572C1D1346005AB0CA /* AuthInputFields.swift in Sources */,
 				C4C3BD642C18B66C00E16382 /* ViewController.swift in Sources */,
+				FAE200932C419D1900E347E0 /* BottomPopupPresentAnimator.swift in Sources */,
 				C4EF9F642C24F2E5005AB0CA /* DashboardController.swift in Sources */,
+				FAE2008F2C419CDB00E347E0 /* BottomPopupDismissInteractionController.swift in Sources */,
 				C4C3FFFD2C3CD0AB00DE80F2 /* DispatchType.swift in Sources */,
 				C4EF9F5A2C1D3D1F005AB0CA /* ForgotPasswordController.swift in Sources */,
+				FAE200952C419D3500E347E0 /* BottomPopupPresentationController.swift in Sources */,
 				C4EF9F772C2DEF3C005AB0CA /* RadioButton.swift in Sources */,
 				C4EF9F7C2C2E2C3A005AB0CA /* DispatchTypeOptions.swift in Sources */,
 				C4EF9F682C25E048005AB0CA /* GradientCard.swift in Sources */,
 				C4EF9F722C2B4D19005AB0CA /* WhoIsSendingViewController.swift in Sources */,
+				FAE200972C419D6300E347E0 /* BottomPopupTransitionHandler.swift in Sources */,
 				C4C3FFFB2C3CB12800DE80F2 /* PreviewOrderViewController.swift in Sources */,
+				FAE2008D2C419CBC00E347E0 /* BottomPopupDismissAnimator.swift in Sources */,
 				C4C3BD602C18B66C00E16382 /* AppDelegate.swift in Sources */,
 				C4EF9F792C2DEFDA005AB0CA /* RadioButtonStack.swift in Sources */,
+				FAE2009B2C419D9F00E347E0 /* BottomPopupViewController.swift in Sources */,
 				C4EF9F532C1B6498005AB0CA /* UIView+Extension.swift in Sources */,
+				FAE200912C419CF600E347E0 /* BottomPopupNavigationController.swift in Sources */,
 				C4EF9F7E2C32C3E0005AB0CA /* PickupScreenViewController.swift in Sources */,
 				C4EF9F5E2C1DEE4F005AB0CA /* SigninController.swift in Sources */,
+				FAE200992C419D8300E347E0 /* BottomPopupUtils.swift in Sources */,
 				C4EF9F822C330AD3005AB0CA /* TextViewWithBottomBorder.swift in Sources */,
 				C4EF9F602C22529C005AB0CA /* ResetPasswordController.swift in Sources */,
+				FAE2009D2C419F2900E347E0 /* RequestSnackBarVC.swift in Sources */,
 				C4EF9F802C32D409005AB0CA /* LocationTextInputView.swift in Sources */,
 				C4EF9F622C2339D4005AB0CA /* SignUpController.swift in Sources */,
 				C4EF9F6E2C275EEB005AB0CA /* SidebarMenuButton.swift in Sources */,

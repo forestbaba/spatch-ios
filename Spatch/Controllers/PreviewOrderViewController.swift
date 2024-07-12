@@ -8,72 +8,47 @@
 import UIKit
 
 class PreviewOrderViewController: UIViewController {
-
+    
     @IBOutlet weak var dispatchTypeCollectionView: UICollectionView!
     
-    var dispatchType: [String] = ["Bike", "Van", "Bus"]
     let brandColor = UIColor(named: "brandColor")
-
+    var dispatchTypes: [DispatchType] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        setupDispatchType()
     }
     
-
-
-//    override func viewDidAppear(_ animated: Bool) {
-//            super.viewDidAppear(animated)
-//        
-//        for _ in 0...2 {
-//                   if let dayView = Bundle.main.loadNibNamed("DispatchType", owner: nil, options: nil)!.first as? DispatchType {
-//                       dayView.price.text = "Up To 5KG"
-//                       dayView.title.text = "Bike"
-//                       dayView.backgroundColor = .darkGray
-//                       horizontalStackView.addArrangedSubview(dayView)
-//                   }
-//               }
-//           
-//        }
-
-
+    func setupDispatchType() {
+        dispatchTypes = [
+            .init(name: "Van"),
+            .init(name: "Bike"),
+            .init(name: "Bus")
+        ]
+    }
 }
 
 extension PreviewOrderViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return dispatchType.count
+        return dispatchTypes.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dispatchTypeCell", for: indexPath) as! DispatchTypeCellCollectionViewCell
         
-        cell.priceLabel.text = dispatchType[indexPath.row]
-        cell.vehicleTypeImageview.image = UIImage(systemName: "bicycle")
-        cell.cardTiles.layer.cornerRadius = 15
-        
-        cell.cardTiles.layer.maskedCorners = [
-            .layerMaxXMaxYCorner,
-            .layerMinXMaxYCorner,
-            .layerMaxXMinYCorner
-        ]
-        
-        cell.cardTiles.backgroundColor = brandColor
-        
-//        view.addSubview(cell.weightDescLabel)
-        cell.weightDescLabel.layer.cornerRadius = 20
-        cell.weightDescLabel.layer.maskedCorners = [
-            .layerMaxXMaxYCorner,
-            .layerMinXMaxYCorner,
-            .layerMaxXMinYCorner
-        ]
-        cell.weightDescLabel.setMargins(10)
+        cell.setup(dispatchType: dispatchTypes[indexPath.row])
         
         return cell
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = storyboard?.instantiateViewController(withIdentifier: "RequestSnackBarVC") as! RequestSnackBarVC
+//        let vc = RequestSnackBarVC()
+        self.present(vc, animated: true)
+    }
 }
 
 
