@@ -7,15 +7,42 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4C300032C3CD2CE00DE80F2 /* DispatchType.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4C300022C3CD2CE00DE80F2 /* DispatchType.xib */; };
+		C4C300052C3F257F00DE80F2 /* DispatchTypeCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C300042C3F257F00DE80F2 /* DispatchTypeCellCollectionViewCell.swift */; };
 		C4C3BD602C18B66C00E16382 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C3BD5F2C18B66C00E16382 /* AppDelegate.swift */; };
 		C4C3BD622C18B66C00E16382 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C3BD612C18B66C00E16382 /* SceneDelegate.swift */; };
 		C4C3BD642C18B66C00E16382 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C3BD632C18B66C00E16382 /* ViewController.swift */; };
 		C4C3BD672C18B66C00E16382 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4C3BD662C18B66C00E16382 /* Base */; };
 		C4C3BD692C18B66D00E16382 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4C3BD682C18B66D00E16382 /* Assets.xcassets */; };
 		C4C3BD6C2C18B66D00E16382 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = C4C3BD6B2C18B66D00E16382 /* Base */; };
+		C4C3FFF92C385AB900DE80F2 /* SenderNameAndPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C3FFF82C385AB900DE80F2 /* SenderNameAndPhoneView.swift */; };
+		C4C3FFFB2C3CB12800DE80F2 /* PreviewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C3FFFA2C3CB12800DE80F2 /* PreviewOrderViewController.swift */; };
+		C4C3FFFD2C3CD0AB00DE80F2 /* DispatchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C3FFFC2C3CD0AB00DE80F2 /* DispatchType.swift */; };
+		C4EF9F4F2C1A1997005AB0CA /* GetStartedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F4E2C1A1997005AB0CA /* GetStartedButton.swift */; };
+		C4EF9F532C1B6498005AB0CA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F522C1B6498005AB0CA /* UIView+Extension.swift */; };
+		C4EF9F552C1CF5D1005AB0CA /* AuthTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F542C1CF5D1005AB0CA /* AuthTabButton.swift */; };
+		C4EF9F572C1D1346005AB0CA /* AuthInputFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F562C1D1346005AB0CA /* AuthInputFields.swift */; };
+		C4EF9F5A2C1D3D1F005AB0CA /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F592C1D3D1F005AB0CA /* ForgotPasswordController.swift */; };
+		C4EF9F5E2C1DEE4F005AB0CA /* SigninController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F5D2C1DEE4F005AB0CA /* SigninController.swift */; };
+		C4EF9F602C22529C005AB0CA /* ResetPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F5F2C22529C005AB0CA /* ResetPasswordController.swift */; };
+		C4EF9F622C2339D4005AB0CA /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F612C2339D4005AB0CA /* SignUpController.swift */; };
+		C4EF9F642C24F2E5005AB0CA /* DashboardController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F632C24F2E5005AB0CA /* DashboardController.swift */; };
+		C4EF9F662C25210B005AB0CA /* DispatchTypeTiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F652C25210B005AB0CA /* DispatchTypeTiles.swift */; };
+		C4EF9F682C25E048005AB0CA /* GradientCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F672C25E048005AB0CA /* GradientCard.swift */; };
+		C4EF9F6C2C26236F005AB0CA /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F6B2C26236F005AB0CA /* SideMenuViewController.swift */; };
+		C4EF9F6E2C275EEB005AB0CA /* SidebarMenuButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F6D2C275EEB005AB0CA /* SidebarMenuButton.swift */; };
+		C4EF9F722C2B4D19005AB0CA /* WhoIsSendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F712C2B4D19005AB0CA /* WhoIsSendingViewController.swift */; };
+		C4EF9F772C2DEF3C005AB0CA /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F762C2DEF3C005AB0CA /* RadioButton.swift */; };
+		C4EF9F792C2DEFDA005AB0CA /* RadioButtonStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F782C2DEFDA005AB0CA /* RadioButtonStack.swift */; };
+		C4EF9F7C2C2E2C3A005AB0CA /* DispatchTypeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F7B2C2E2C3A005AB0CA /* DispatchTypeOptions.swift */; };
+		C4EF9F7E2C32C3E0005AB0CA /* PickupScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F7D2C32C3E0005AB0CA /* PickupScreenViewController.swift */; };
+		C4EF9F802C32D409005AB0CA /* LocationTextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F7F2C32D409005AB0CA /* LocationTextInputView.swift */; };
+		C4EF9F822C330AD3005AB0CA /* TextViewWithBottomBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EF9F812C330AD3005AB0CA /* TextViewWithBottomBorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4C300022C3CD2CE00DE80F2 /* DispatchType.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DispatchType.xib; sourceTree = "<group>"; };
+		C4C300042C3F257F00DE80F2 /* DispatchTypeCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchTypeCellCollectionViewCell.swift; sourceTree = "<group>"; };
 		C4C3BD5C2C18B66C00E16382 /* Spatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4C3BD5F2C18B66C00E16382 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C4C3BD612C18B66C00E16382 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +51,29 @@
 		C4C3BD682C18B66D00E16382 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4C3BD6B2C18B66D00E16382 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4C3BD6D2C18B66D00E16382 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4C3FFF82C385AB900DE80F2 /* SenderNameAndPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderNameAndPhoneView.swift; sourceTree = "<group>"; };
+		C4C3FFFA2C3CB12800DE80F2 /* PreviewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewOrderViewController.swift; sourceTree = "<group>"; };
+		C4C3FFFC2C3CD0AB00DE80F2 /* DispatchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchType.swift; sourceTree = "<group>"; };
+		C4EF9F4E2C1A1997005AB0CA /* GetStartedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetStartedButton.swift; sourceTree = "<group>"; };
+		C4EF9F522C1B6498005AB0CA /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		C4EF9F542C1CF5D1005AB0CA /* AuthTabButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTabButton.swift; sourceTree = "<group>"; };
+		C4EF9F562C1D1346005AB0CA /* AuthInputFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthInputFields.swift; sourceTree = "<group>"; };
+		C4EF9F592C1D3D1F005AB0CA /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		C4EF9F5D2C1DEE4F005AB0CA /* SigninController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninController.swift; sourceTree = "<group>"; };
+		C4EF9F5F2C22529C005AB0CA /* ResetPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordController.swift; sourceTree = "<group>"; };
+		C4EF9F612C2339D4005AB0CA /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
+		C4EF9F632C24F2E5005AB0CA /* DashboardController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardController.swift; sourceTree = "<group>"; };
+		C4EF9F652C25210B005AB0CA /* DispatchTypeTiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchTypeTiles.swift; sourceTree = "<group>"; };
+		C4EF9F672C25E048005AB0CA /* GradientCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientCard.swift; sourceTree = "<group>"; };
+		C4EF9F6B2C26236F005AB0CA /* SideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		C4EF9F6D2C275EEB005AB0CA /* SidebarMenuButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarMenuButton.swift; sourceTree = "<group>"; };
+		C4EF9F712C2B4D19005AB0CA /* WhoIsSendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhoIsSendingViewController.swift; sourceTree = "<group>"; };
+		C4EF9F762C2DEF3C005AB0CA /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
+		C4EF9F782C2DEFDA005AB0CA /* RadioButtonStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButtonStack.swift; sourceTree = "<group>"; };
+		C4EF9F7B2C2E2C3A005AB0CA /* DispatchTypeOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DispatchTypeOptions.swift; sourceTree = "<group>"; };
+		C4EF9F7D2C32C3E0005AB0CA /* PickupScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupScreenViewController.swift; sourceTree = "<group>"; };
+		C4EF9F7F2C32D409005AB0CA /* LocationTextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTextInputView.swift; sourceTree = "<group>"; };
+		C4EF9F812C330AD3005AB0CA /* TextViewWithBottomBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewWithBottomBorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +106,11 @@
 		C4C3BD5E2C18B66C00E16382 /* Spatch */ = {
 			isa = PBXGroup;
 			children = (
+				C4EF9F7A2C2E2C21005AB0CA /* Model */,
+				C4EF9F582C1D3CFC005AB0CA /* Controllers */,
+				C4EF9F512C1B6467005AB0CA /* Extensions */,
+				C4EF9F502C1B645B005AB0CA /* utility */,
+				C4C3BD732C1A133400E16382 /* Custom Views */,
 				C4C3BD5F2C18B66C00E16382 /* AppDelegate.swift */,
 				C4C3BD612C18B66C00E16382 /* SceneDelegate.swift */,
 				C4C3BD632C18B66C00E16382 /* ViewController.swift */,
@@ -65,6 +120,74 @@
 				C4C3BD6D2C18B66D00E16382 /* Info.plist */,
 			);
 			path = Spatch;
+			sourceTree = "<group>";
+		};
+		C4C3BD732C1A133400E16382 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4EF9F752C2DEF0C005AB0CA /* Radio Button */,
+				C4EF9F4E2C1A1997005AB0CA /* GetStartedButton.swift */,
+				C4EF9F542C1CF5D1005AB0CA /* AuthTabButton.swift */,
+				C4EF9F562C1D1346005AB0CA /* AuthInputFields.swift */,
+				C4EF9F652C25210B005AB0CA /* DispatchTypeTiles.swift */,
+				C4EF9F672C25E048005AB0CA /* GradientCard.swift */,
+				C4EF9F6D2C275EEB005AB0CA /* SidebarMenuButton.swift */,
+				C4EF9F7F2C32D409005AB0CA /* LocationTextInputView.swift */,
+				C4EF9F812C330AD3005AB0CA /* TextViewWithBottomBorder.swift */,
+				C4C3FFF82C385AB900DE80F2 /* SenderNameAndPhoneView.swift */,
+				C4C300022C3CD2CE00DE80F2 /* DispatchType.xib */,
+				C4C300042C3F257F00DE80F2 /* DispatchTypeCellCollectionViewCell.swift */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		C4EF9F502C1B645B005AB0CA /* utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utility;
+			sourceTree = "<group>";
+		};
+		C4EF9F512C1B6467005AB0CA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C4EF9F522C1B6498005AB0CA /* UIView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C4EF9F582C1D3CFC005AB0CA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C4EF9F592C1D3D1F005AB0CA /* ForgotPasswordController.swift */,
+				C4EF9F5D2C1DEE4F005AB0CA /* SigninController.swift */,
+				C4EF9F5F2C22529C005AB0CA /* ResetPasswordController.swift */,
+				C4EF9F612C2339D4005AB0CA /* SignUpController.swift */,
+				C4EF9F632C24F2E5005AB0CA /* DashboardController.swift */,
+				C4EF9F6B2C26236F005AB0CA /* SideMenuViewController.swift */,
+				C4EF9F712C2B4D19005AB0CA /* WhoIsSendingViewController.swift */,
+				C4EF9F7D2C32C3E0005AB0CA /* PickupScreenViewController.swift */,
+				C4C3FFFA2C3CB12800DE80F2 /* PreviewOrderViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C4EF9F752C2DEF0C005AB0CA /* Radio Button */ = {
+			isa = PBXGroup;
+			children = (
+				C4EF9F762C2DEF3C005AB0CA /* RadioButton.swift */,
+				C4EF9F782C2DEFDA005AB0CA /* RadioButtonStack.swift */,
+			);
+			path = "Radio Button";
+			sourceTree = "<group>";
+		};
+		C4EF9F7A2C2E2C21005AB0CA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4EF9F7B2C2E2C3A005AB0CA /* DispatchTypeOptions.swift */,
+				C4C3FFFC2C3CD0AB00DE80F2 /* DispatchType.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4C300032C3CD2CE00DE80F2 /* DispatchType.xib in Resources */,
 				C4C3BD692C18B66D00E16382 /* Assets.xcassets in Resources */,
 				C4C3BD6C2C18B66D00E16382 /* Base in Resources */,
 				C4C3BD672C18B66C00E16382 /* Base in Resources */,
@@ -138,9 +262,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4EF9F662C25210B005AB0CA /* DispatchTypeTiles.swift in Sources */,
+				C4C3FFF92C385AB900DE80F2 /* SenderNameAndPhoneView.swift in Sources */,
+				C4EF9F4F2C1A1997005AB0CA /* GetStartedButton.swift in Sources */,
+				C4EF9F552C1CF5D1005AB0CA /* AuthTabButton.swift in Sources */,
+				C4EF9F572C1D1346005AB0CA /* AuthInputFields.swift in Sources */,
 				C4C3BD642C18B66C00E16382 /* ViewController.swift in Sources */,
+				C4EF9F642C24F2E5005AB0CA /* DashboardController.swift in Sources */,
+				C4C3FFFD2C3CD0AB00DE80F2 /* DispatchType.swift in Sources */,
+				C4EF9F5A2C1D3D1F005AB0CA /* ForgotPasswordController.swift in Sources */,
+				C4EF9F772C2DEF3C005AB0CA /* RadioButton.swift in Sources */,
+				C4EF9F7C2C2E2C3A005AB0CA /* DispatchTypeOptions.swift in Sources */,
+				C4EF9F682C25E048005AB0CA /* GradientCard.swift in Sources */,
+				C4EF9F722C2B4D19005AB0CA /* WhoIsSendingViewController.swift in Sources */,
+				C4C3FFFB2C3CB12800DE80F2 /* PreviewOrderViewController.swift in Sources */,
 				C4C3BD602C18B66C00E16382 /* AppDelegate.swift in Sources */,
+				C4EF9F792C2DEFDA005AB0CA /* RadioButtonStack.swift in Sources */,
+				C4EF9F532C1B6498005AB0CA /* UIView+Extension.swift in Sources */,
+				C4EF9F7E2C32C3E0005AB0CA /* PickupScreenViewController.swift in Sources */,
+				C4EF9F5E2C1DEE4F005AB0CA /* SigninController.swift in Sources */,
+				C4EF9F822C330AD3005AB0CA /* TextViewWithBottomBorder.swift in Sources */,
+				C4EF9F602C22529C005AB0CA /* ResetPasswordController.swift in Sources */,
+				C4EF9F802C32D409005AB0CA /* LocationTextInputView.swift in Sources */,
+				C4EF9F622C2339D4005AB0CA /* SignUpController.swift in Sources */,
+				C4EF9F6E2C275EEB005AB0CA /* SidebarMenuButton.swift in Sources */,
+				C4EF9F6C2C26236F005AB0CA /* SideMenuViewController.swift in Sources */,
 				C4C3BD622C18B66C00E16382 /* SceneDelegate.swift in Sources */,
+				C4C300052C3F257F00DE80F2 /* DispatchTypeCellCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
