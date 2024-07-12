@@ -94,25 +94,39 @@ extension UIView {
     }
     
     func center(inView view: UIView, yConstant: CGFloat? = 0) {
-            translatesAutoresizingMaskIntoConstraints = false
-            centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-            centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: yConstant!).isActive = true
-        }
+        translatesAutoresizingMaskIntoConstraints = false
+        centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: yConstant!).isActive = true
+    }
     
     
     func addDashedBorder() {
-           //Create a CAShapeLayer
-           let shapeLayer = CAShapeLayer()
-           shapeLayer.strokeColor = UIColor.red.cgColor
-           shapeLayer.lineWidth = 2
-           // passing an array with the values [2,3] sets a dash pattern that alternates between a 2-user-space-unit-long painted segment and a 3-user-space-unit-long unpainted segment
-           shapeLayer.lineDashPattern = [2,3]
-
-           let path = CGMutablePath()
-           path.addLines(between: [CGPoint(x: 0, y: 0),
-                                   CGPoint(x: self.frame.width, y: 0)])
-           shapeLayer.path = path
-           layer.addSublayer(shapeLayer)
-       }
+        //Create a CAShapeLayer
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.strokeColor = UIColor.red.cgColor
+        shapeLayer.lineWidth = 2
+        // passing an array with the values [2,3] sets a dash pattern that alternates between a 2-user-space-unit-long painted segment and a 3-user-space-unit-long unpainted segment
+        shapeLayer.lineDashPattern = [2,3]
+        
+        let path = CGMutablePath()
+        path.addLines(between: [CGPoint(x: 0, y: 0),
+                                CGPoint(x: self.frame.width, y: 0)])
+        shapeLayer.path = path
+        layer.addSublayer(shapeLayer)
+    }
+    
+    struct Corner {
+        static let topLeft = UIRectCorner.topLeft
+        static let topRight = UIRectCorner.topRight
+        static let bottomLeft = UIRectCorner.bottomLeft
+        static let bottomRight = UIRectCorner.bottomRight
+    }
+    
+    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
 }
 
