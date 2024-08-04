@@ -79,15 +79,25 @@ class SideMenuViewController: UIViewController {
         
         sidemenuProfilePicture.contentMode = .scaleAspectFit
         
-        
-        
         shipmentButton.labelText = "Shipment"
         walletButton.labelText = "Wallet"
         aboutButton.labelText = "About"
         contactButton.labelText = "Contact"
         logoutButton.labelText = "Logout"
+        
+        handleLogout()
     }
     
+    func handleLogout() {
+        logoutButton.didTap = {
+            PersistenceManager.main.authToken = ""
+
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = storyboard.instantiateViewController(withIdentifier: "SigninController") as! SigninController
+           vc.modalPresentationStyle = .fullScreen
+           self.present(vc, animated: true)
+        }
+    }
 }
 
 

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Combine
 
 class SigninController: UIViewController {
     
@@ -14,6 +15,7 @@ class SigninController: UIViewController {
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var emailLabel: UILabel!
     
+    @IBOutlet weak var passwordRequiredErrorLabel: UILabel!
     @IBOutlet weak var emailOrPhonenumberTextField: AuthInputFields!
     
     @IBOutlet weak var passwordTextField: AuthInputFields!
@@ -23,11 +25,19 @@ class SigninController: UIViewController {
     @IBOutlet weak var signInButton: GetStartedButton!
     
     let brandColor = UIColor(named: "brandColor")
+    var viewModel : LoginViewModel
+    var cancellable = Set<AnyCancellable>()
+    
+    var spinner = UIActivityIndicatorView(style: .large)
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        subscribeToPublishers()
+        signInButtonAction()
         renderPhoneView()
+        passwordRequiredErrorLabel.isHidden = true
         
         
         phoneView.addTapGestureRecognizer { [weak self] in
@@ -50,8 +60,32 @@ class SigninController: UIViewController {
         signInButton.isSystemImage.0 = false
         
         signInButton.customLabel = "Sign in"
-        signInButton.didTap = {
-            print("Let's go in")
+        
+        spinner.translatesAutoresizingMaskIntoConstraints = false
+       
+        
+        signInButton.addSubview(spinner)
+        spinner.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+                spinner.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+//        signInButton.didTap = {
+//            print("Let's go in")
+//        }
+    }
+    
+    required init?(coder: NSCoder) {
+        self.viewModel = LoginViewModel(client: AuthClient())
+        super.init(coder: coder)
+    }
+    
+    func signInButtonAction() {
+        signInButton.didTap = { [weak self] in
+            guard let self else { return }
+            spinner.startAnimating()
+            validateFields()
+            let email = emailOrPhonenumberTextField.textField.text ?? ""
+            let password = passwordTextField.textField.text ?? ""
+            
+            viewModel.login(email: email, password: password, fcm: "jhdkjjdghj")
         }
     }
     
@@ -112,5 +146,38 @@ class SigninController: UIViewController {
         textField.customPlaceHolder = placeHolder
         textField.iconName = iconName
         textField.iconColor = color
+    }
+    
+    func validateFields(){
+        if !passwordTextField.textField.hasText || !emailOrPhonenumberTextField.textField.hasText{
+            passwordRequiredErrorLabel.isHidden = false
+            passwordRequiredErrorLabel.text = "Phone number/email field are required"
+            spinner.stopAnimating()
+        }
+       // forgotPasswordLabel.isHidden = true
+    }
+}
+
+
+
+extension SigninController {
+    
+    private func subscribeToPublishers(){
+        viewModel.data
+            .receive(on: DispatchQueue.main)
+            .sink { response in
+                print("API RESPONSE: ", response)
+                guard let response else { return }
+                PersistenceManager.main.authToken = response.token
+                                
+                if !response.token.isEmpty {
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let vc = storyboard.instantiateViewController(withIdentifier: "DashboardController") as! DashboardController
+                        vc.modalPresentationStyle = .fullScreen
+                        self.present(vc, animated: true)
+//                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+            }
+            .store(in: &cancellable)
     }
 }
