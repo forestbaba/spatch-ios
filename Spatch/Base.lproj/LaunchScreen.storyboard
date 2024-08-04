@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPATCH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="13I-Wo-qvW">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" name="brandColor"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="50"/>
                                 <color key="textColor" red="1" green="0.99761391050000003" blue="0.9559592468" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -28,10 +28,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="13I-Wo-qvW" secondAttribute="bottom" id="PGw-h5-irr"/>
+                            <constraint firstAttribute="bottom" secondItem="13I-Wo-qvW" secondAttribute="bottom" id="PGw-h5-irr"/>
                             <constraint firstItem="13I-Wo-qvW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PIr-Fa-fff"/>
                             <constraint firstItem="13I-Wo-qvW" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="kUF-Vg-YvH"/>
-                            <constraint firstItem="13I-Wo-qvW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="qXM-i7-ys3"/>
+                            <constraint firstItem="13I-Wo-qvW" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="qXM-i7-ys3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="13I-Wo-qvW" secondAttribute="trailing" id="zQt-tS-pkY"/>
                         </constraints>
                     </view>

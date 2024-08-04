@@ -179,5 +179,20 @@ extension SigninController {
                 }
             }
             .store(in: &cancellable)
+        
+        viewModel.loginError
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] erroRes in
+                print("Error RESPONSE: ", erroRes)
+                guard let self else {return}
+                if !erroRes.isEmpty {
+                    spinner.stopAnimating()
+                    let alert = UIAlertController(title: "Login Error", message: erroRes.first, preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in}))
+                    self.present(alert, animated: true, completion: nil)
+                }
+               
+            }
+            .store(in: &cancellable)
     }
 }
