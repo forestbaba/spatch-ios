@@ -89,7 +89,6 @@ class DashboardController: UIViewController, SideMenuViewControllerDelegate {
         //        interstateCard.gradientColors = [.red, .purple]
         
         breadCrumbsImageView.addTapGestureRecognizer {
-            print("Hello sir")
             self.toggleSideMenu(expanded: self.isExpanded ? false : true)
         }
         

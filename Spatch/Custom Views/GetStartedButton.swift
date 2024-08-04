@@ -12,14 +12,7 @@ class GetStartedButton: UIView {
     var didTap : (() -> ()) = {}
     
     let brandColor = UIColor(named: "brandColor")
-    
-    
-//    var customRightImage : String = "" {
-//        didSet {
-//            rightImage.image = UIImage(named: customRightImage)
-//        }
-//    }
-//    
+
  var customLabel : String = "" {
         didSet {
             buttonLabel.text = customLabel

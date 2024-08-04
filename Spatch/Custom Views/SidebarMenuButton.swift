@@ -8,6 +8,7 @@
 import UIKit
 
 class SidebarMenuButton: UIView {
+    var didTap : (() -> ()) = {}
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -29,11 +30,6 @@ class SidebarMenuButton: UIView {
         }
     }
     
-//    lazy var iconName: String = "chevron.forward" {
-//        didSet {
-//        return iconName
-//        }
-//    }
     
     func iconName(iconName: String?) -> String {
         return  iconName ??  "chevron.forward"
@@ -75,5 +71,12 @@ class SidebarMenuButton: UIView {
         buttonIcon.anchor(top: topAnchor, bottom: bottomAnchor, right: rightAnchor, paddingTop: 10, paddingBottom: 10, paddingRight: 5, width: 50, height: 50)
         
         addBottomBorder(with: .lightGray, andWidth: 1)
+        setUpDidTap()
+    }
+    
+    func setUpDidTap () {
+        addTapGestureRecognizer { [weak self] in
+            self?.didTap()
+        }
     }
 }
